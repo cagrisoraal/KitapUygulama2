@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //ViewBag.KategoriListele
+}
+
+@model List<Deneme.DAL.Entities.Kitaplar>
+<br />
+<br />
+<div class="container">
+    <b>Arama :</b>
+    <select id="KategoriSec">
+        <option value="Kitap">Kitap Adına Göre </option>
+        <option value="Yazar">Kategoriye Göre </option>
+    </select>
+
+    <br />
+    <br />
+
+    @Html.TextBox("Aranacak")
+
+    <input type="submit" id="aramabutonu" value="Ara" />
+    <table class="table table-bordered">
+        <thead>
+
+            <tr>
+                <th>Kitap Adı</th>
+                <th>Yazar Adı </th>
+
+            </tr>
+        </thead>
+        <tbody id="DataSearch">
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.KitapAdi</td>
+                    <td>@item.YazarAdi</td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#aramabutonu").click(function () {
+            var searchby = $("#KategoriSec").val();
+            var searchvalue = $("#Aranacak").val();
+            var SetData = $("#DataSearch").val();
+            SetData.html("");
+            $.ajax({
+                type: "post",
+                url: "/Home/Arama,
+                contentType: "html",
+                success: function (result) {
+                    if (result.length == 0) {
+                        SetData.append('<tr style="color:red"><td colspan="3">Kayıt Bulunamadi</td></tr>')
+                    }
+                    else {
+                        $.each(result, function (index, value) {
+                            var Data = "<tr>" +
+                                "<td>" + value.KitapAdi + "</td>" +
+                                "<td>" + value.YazarAdi + "</td>" +
+                                "</tr>";
+                            SetData.append(Data);
+                        });
+
+                    }
+
+                }
+
+            });
+
+        });
+
+    });
+
+</script>

@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Kitap Listesi";
+}
+
+
+@model List<Deneme.DAL.Entities.Kitaplar>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Kitap Adı
+        </th>
+        <th>
+            Yazar Adı
+        </th>
+    </tr>
+
+    @foreach (var item in @Model)
+    {
+        <tr>
+            <th>
+                @item.KitapAdi
+            </th>
+            <th>
+                @item.YazarAdi
+            </th>
+        </tr>
+    }
+
+
+
+</table>

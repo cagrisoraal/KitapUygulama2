@@ -1,0 +1,14 @@
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\bin\Debug\Deneme.BLL.dll.config
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\bin\Debug\Deneme.BLL.dll
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\bin\Debug\Deneme.BLL.pdb
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\bin\Debug\Deneme.DAL.dll
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\bin\Debug\EntityFramework.dll
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\bin\Debug\Deneme.DAL.pdb
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\bin\Debug\Deneme.DAL.dll.config
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\bin\Debug\EntityFramework.xml
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\obj\Debug\Deneme.BLL.csprojResolveAssemblyReference.cache
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\obj\Debug\Deneme.BLL.csproj.CoreCompileInputs.cache
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\obj\Debug\Deneme.BLL.dll
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.BLL\obj\Debug\Deneme.BLL.pdb

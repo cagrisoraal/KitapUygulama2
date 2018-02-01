@@ -1,0 +1,11 @@
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\bin\Debug\Deneme.DAL.dll.config
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\bin\Debug\Deneme.DAL.dll
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\bin\Debug\Deneme.DAL.pdb
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\bin\Debug\EntityFramework.dll
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\bin\Debug\EntityFramework.xml
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\obj\Debug\Deneme.DAL.csprojResolveAssemblyReference.cache
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\obj\Debug\Deneme.DAL.csproj.CoreCompileInputs.cache
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\obj\Debug\Deneme.DAL.dll
+C:\Users\cagri\Documents\Visual Studio 2017\Projects\Deneme1\Deneme.DAL\obj\Debug\Deneme.DAL.pdb
