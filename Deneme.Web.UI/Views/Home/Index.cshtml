@@ -9,6 +9,7 @@
 <br />
 <br />
 <div class="container">
+
     <b>Arama :</b>
     <select id="KategoriSec">
         <option value="Kitap">Kitap Adına Göre </option>
@@ -20,7 +21,7 @@
 
     @Html.TextBox("Aranacak")
 
-    <input type="submit" id="aramabutonu" value="Ara" />
+    <input type="submit" id="aramabutonu" value="Ara" /><br /><br />
     <table class="table table-bordered">
         <thead>
 
@@ -43,44 +44,43 @@
         </tbody>
 
     </table>
+    <script >
+        $(document).ready(function () {
+            $("#aramabutonu").click(function () {
+                var searchby = $("#KategoriSec").val();
+                var searchvalue = $("#Aranacak").val();
+                var SetData = $("#DataSearch").val();
+                SetData.html("");
+                $.ajax({
+                    type: "post",
+                    url: "/Home/Arama?searchby= " + searchby + "&searchvalue=" + searchvalue,
+                    contentType: "html",
+                    success: function (result) {
+                        if (result.length == 0) {
+                            SetData.append('<tr style="color:red"><td colspan="3">Kayıt Bulunamadi</td></tr>')
+                        }
+                        else {
+                            $.each(result, function (index, value) {
+                                var Data = "<tr>" +
+                                    "<td>" + value.KitapAdi + "</td>" +
+                                    "<td>" + value.YazarAdi + "</td>" +
+                                    "</tr>";
+                                SetData.append(Data);
+                            });
 
-
-</div>
-
-<script src="~/Scripts/jquery-1.10.2.min.js"></script>
-
-<script>
-    $(document).ready(function () {
-        $("#aramabutonu").click(function () {
-            var searchby = $("#KategoriSec").val();
-            var searchvalue = $("#Aranacak").val();
-            var SetData = $("#DataSearch").val();
-            SetData.html("");
-            $.ajax({
-                type: "post",
-                url: "/Home/Arama,
-                contentType: "html",
-                success: function (result) {
-                    if (result.length == 0) {
-                        SetData.append('<tr style="color:red"><td colspan="3">Kayıt Bulunamadi</td></tr>')
-                    }
-                    else {
-                        $.each(result, function (index, value) {
-                            var Data = "<tr>" +
-                                "<td>" + value.KitapAdi + "</td>" +
-                                "<td>" + value.YazarAdi + "</td>" +
-                                "</tr>";
-                            SetData.append(Data);
-                        });
+                        }
 
                     }
 
-                }
+                });
 
             });
 
         });
 
-    });
+    </script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+</div>
 
-</script>
+
+

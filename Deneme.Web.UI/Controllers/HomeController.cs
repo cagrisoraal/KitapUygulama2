@@ -59,8 +59,6 @@ namespace Deneme.Web.UI.Controllers
         }
 
 
-
-
         [Authorize]
         public ActionResult About()
         {
@@ -73,7 +71,10 @@ namespace Deneme.Web.UI.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+          var sorgu=  ktgr.Listele();
+
+
+            return View(sorgu);
         }
     }
 }
